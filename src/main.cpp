@@ -1,3 +1,5 @@
+#include <cfloat>
+#include <climits>
 #include <iostream>
 
 using namespace std;
@@ -16,13 +18,18 @@ int main()
 	// cout << "That's my favorite number too" << endl;
 	// cout << "Yes, " << fav_num << " is my favourite number!" << endl;
 
-	cin >> num1 >> num2;
-	cout << "num1: " << num1 << endl << "num2: " << num2 << endl;
-	cin >> num2;
-	cin >> num3;
-	cout << "Values:" << endl;
-	cout << num2 << endl;
-	cout << num3 << endl;
+	// cin >> num1 >> num2;
+	// cout << "num1: " << num1 << endl << "num2: " << num2 << endl;
+	// cin >> num2;
+	// cin >> num3;
+	// cout << "Values:" << endl;
+	// cout << num2 << endl;
+	// cout << num3 << endl;
+
+	// cout << INT_MAX << endl;
+	// cout << LONG_LONG_MAX;
+
+	cout << sizeof(int) << endl;
 
 	return 0;
 }
