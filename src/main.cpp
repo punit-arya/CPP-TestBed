@@ -43,16 +43,16 @@ int main()
 	// 	int scores[5]{10};
 	//
 	// 	cout << scores[0] << endl;
-	// 	cout << scores1] << endl;
-	// 	cout << scores2] << endl;
+	// 	cout << scores[1] << endl;
+	// 	cout << scores[2] << endl;
 	// 	cout << scores[3] << endl;
 	// 	cout << scores[4] << endl;
 
 	// 	int scores[5]{10, 10};
 	//
 	// 	cout << scores[0] << endl;
-	// 	cout << scores1] << endl;
-	// 	cout << scores2] << endl;
+	// 	cout << scores[1] << endl;
+	// 	cout << scores[2] << endl;
 	// 	cout << scores[3] << endl;
 	// 	cout << scores[4] << endl;
 
@@ -78,57 +78,99 @@ int main()
 	// 	}
 	// }
 
-	vector<int> vector1, vector2;
-	int i{0}, j{0};
-	vector<vector<int>> vector2d;
+	// 	vector<int> vector1, vector2;
+	// 	int i{0}, j{0};
+	// 	vector<vector<int>> vector2d;
+	//
+	// 	cout << vector1.size() << endl << vector2.size() << endl;
+	// 	vector1.push_back(10);
+	// 	vector1.push_back(20);
+	//
+	// 	for (i = 0; i < vector1.size(); ++i)
+	// 	{
+	// 		cout << vector1.at(i) << endl;
+	// 	}
+	//
+	// 	vector2.push_back(100);
+	// 	vector2.push_back(200);
+	//
+	// 	for (i = 0; i < vector2.size(); ++i)
+	// 	{
+	// 		cout << vector2.at(i) << endl;
+	// 	}
+	//
+	// 	vector2d.push_back(vector1);
+	// 	vector2d.push_back(vector2);
+	//
+	// 	for (i = 0; i < vector2d.size(); ++i)
+	// 	{
+	// 		for (j = 0; j < vector2d.at(i).size(); ++j)
+	// 		{
+	// 			cout << vector2d.at(i).at(j) << "\t";
+	// 		}
+	// 		cout << endl;
+	// 	}
+	//
+	// 	cout << "Changing..." << endl;
+	// 	vector1.at(0) = 1000;
+	// 	cout << "After change:" << endl;
+	//
+	// 	for (i = 0; i < vector2d.size(); ++i)
+	// 	{
+	// 		for (j = 0; j < vector2d.at(i).size(); ++j)
+	// 		{
+	// 			cout << vector2d.at(i).at(j) << "\t";
+	// 		}
+	// 		cout << endl;
+	// 	}
+	//
+	// 	for (i = 0; i < vector1.size(); ++i)
+	// 	{
+	// 		cout << vector1.at(i) << "\t";
+	// 	}
+	// 	cout << endl;
+	//
+	// 	return 0;
 
-	cout << vector1.size() << endl << vector2.size() << endl;
-	vector1.push_back(10);
-	vector1.push_back(20);
+	// 	cout << 5 / 10 << endl;
+	// 	cout << 5.0 / 10 << endl;
+	// 	cout << 5 / 10.0 << endl;
+	// 	cout << 5.0 / 10.0 << endl;
+	//
+	// 	int a;
+	// 	double b;
+	//
+	// 	a = 5 / 10;
+	// 	b = 5 / 10;
+	// 	cout << a << endl;
+	// 	cout << b << endl;
+	//
+	// 	b = 5.0 / 10;
+	// 	cout << b << endl;
+	//
+	// 	b = 5 / 10.0;
+	// 	cout << b << endl;
+	//
+	// 	b = 5.0 / 10.0;
+	// 	cout << b;
 
-	for (i = 0; i < vector1.size(); ++i)
-	{
-		cout << vector1.at(i) << endl;
-	}
+	cout << (0.1 == 0.1) << endl;
+	cout << boolalpha;
+	cout << (0.1 == 0.1) << endl;
 
-	vector2.push_back(100);
-	vector2.push_back(200);
+	cout << (1 == 1) << endl;
+	cout << noboolalpha;
+	cout << (1 == 1) << endl;
 
-	for (i = 0; i < vector2.size(); ++i)
-	{
-		cout << vector2.at(i) << endl;
-	}
+	int a = 0.1;
+	int b = 0.1;
+	bool result;
 
-	vector2d.push_back(vector1);
-	vector2d.push_back(vector2);
+	cout << boolalpha;
+	cout << (a == b) << endl;
 
-	for (i = 0; i < vector2d.size(); ++i)
-	{
-		for (j = 0; j < vector2d.at(i).size(); ++j)
-		{
-			cout << vector2d.at(i).at(j) << "\t";
-		}
-		cout << endl;
-	}
+	result = a == b;
+	cout << result << endl;
 
-	cout << "Changing..." << endl;
-	vector1.at(0) = 1000;
-	cout << "After change:" << endl;
-
-	for (i = 0; i < vector2d.size(); ++i)
-	{
-		for (j = 0; j < vector2d.at(i).size(); ++j)
-		{
-			cout << vector2d.at(i).at(j) << "\t";
-		}
-		cout << endl;
-	}
-
-	for (i = 0; i < vector1.size(); ++i)
-	{
-		cout << vector1.at(i) << "\t";
-	}
-	cout << endl;
-
-	return 0;
+	cout << (0.3 == (0.1 + 0.1 + 0.1)) << endl;
 }
